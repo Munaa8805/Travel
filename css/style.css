@@ -1,0 +1,17 @@
+.mt-20 {
+  margin-top: 20px;
+}
+.col-4:hover {
+  transform: scale(1.05);
+}
+.col-4 {
+  height: 500px;
+}
+footer {
+  height: 80px;
+  margin-top: 50px;
+}
+footer > .container,
+footer .row {
+  height: 100%;
+}
