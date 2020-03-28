@@ -32,7 +32,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item active">
-                <a class="nav-link" href="#"
+                <a class="nav-link" href="index.html"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
@@ -42,6 +42,11 @@
               <li class="nav-item">
                 <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"
                   >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="admin/index.html" tabindex="-1" aria-disabled="true"
+                  >Admin Page</a
                 >
               </li>
             </ul>
@@ -135,6 +140,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+          </div>
           <!---Cards-->
           <div class="row mt-20">
             <div class="col-4">
@@ -164,18 +170,21 @@
               </div>
             </div>
             <div class="col-4">
+              <div class="card">
               <img src="images/img-3.jpg" alt="card 3" class="card-img-top" />
-              <div class="card-body">
-                <h4 class="card-title">Statue of Liberty</h4>
-                <p class="card-text">
-                  The Statue of Liberty is a colossal neoclassical sculpture on
-                  Liberty Island in New York Harbor in New York City, in the
-                  United States.
-                </p>
-                <button class="btn btn-primary">Details</button>
+                <div class="card-body">
+                  <h4 class="card-title">Statue of Liberty</h4>
+                  <p class="card-text">
+                    The Statue of Liberty is a colossal neoclassical sculpture on
+                    Liberty Island in New York Harbor in New York City, in the
+                    United States.
+                  </p>
+                  <button class="btn btn-primary">Details</button>
+                </div>
               </div>
             </div>
             <div class="col-4">
+              <div class="card">
               <img src="images/img-4.jpg" alt="card 4" class="card-img-top" />
               <div class="card-body">
                 <h4 class="card-title">Sydney Opera House</h4>
@@ -187,7 +196,9 @@
                 <button class="btn btn-primary">Details</button>
               </div>
             </div>
+            </div>
             <div class="col-4">
+              <div class="card">
               <img src="images/img-5.jpg" alt="card 4" class="card-img-top" />
               <div class="card-body">
                 <h4 class="card-title">Parliament Hill</h4>
@@ -200,9 +211,10 @@
                 </p>
                 <button class="btn btn-primary">Details</button>
               </div>
-        
+            </div>
             </div>
             <div class="col-4">
+              <div class="card">
               <img src="images/img-6.jpg" alt="card 4" class="card-img-top" />
               <div class="card-body">
                 <h4 class="card-title">Great Wall of China</h4>
@@ -216,7 +228,6 @@
               </div>
             </div>
           </div>
- 
       </div>
     </main>
     <!---Modal-->
@@ -235,28 +246,29 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form action="">
               <div class="form-group">
                 <label for="name">Your name</label>
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control  required"
                   id="name"
-                  placeholder="Enter your name"
+                 
+                  placeholder="Enter your name" 
                 />
               </div>
               <div class="form-group">
                 <label for="phone">Phone number</label>
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control  required"
                   id="phone"
-                  placeholder="Enter your phone"
+                  placeholder="Enter your phone" 
                 />
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea class="form-control  required" id="message" rows="3" required></textarea>
               </div>
             </form>
           </div>
@@ -286,6 +298,7 @@
         </div>
       </div>
     </footer>
+    <script src="app.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
